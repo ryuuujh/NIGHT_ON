@@ -1,0 +1,30 @@
+# OS / 편집기 임시 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+._*
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# 로그·임시
+*.log
+*.tmp
+*.bak
+
+# 의존성·빌드 산출물 (현재는 쓰지 않지만 실수로 올라가지 않도록)
+node_modules/
+dist/
+.cache/
+
+# Vercel CLI 로컬 설정
+.vercel/
+
+# 환경 변수
+.env
+.env.*
+
+# 사이트 자산(images/, audio/, css/, js/, videos/)은 모두 포함한다.

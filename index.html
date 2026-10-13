@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NIGHT ON | 당신의 밤을 켜세요.</title>
+  <meta name="description" content="밝은 낮에도 원하는 공간에 나만의 밤을 만드는 천장형 빛 흡수 전등, NIGHT ON. 개인 마케팅 프로젝트로 기획한 가상 제품 콘셉트입니다.">
+  <meta name="theme-color" content="#10182D">
+  <link rel="icon" href="data:,"><!-- 파비콘 요청 404 로그 방지 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- A. 내비게이션 -->
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="wordmark" href="#top" aria-label="NIGHT ON 처음으로">NIGHT ON</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="nav-toggle__label">메뉴</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#product">제품 소개</a></li>
+          <li><a class="site-nav__link" href="#compare">낮과 밤</a></li>
+          <li><a class="site-nav__link" href="#scenes">사용 장면</a></li>
+          <li><a class="site-nav__link" href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- B. 메인 비주얼 -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media" data-image="images/hero_night.png">
+        <img
+          src="images/hero_night.png"
+          width="1672" height="941"
+          alt="밝은 창가는 그대로인데 침대 주변만 밤처럼 어두워진 침실. 천장의 NIGHT ON 전등 가장자리에 얇은 라벤더 링이 켜져 있다."
+          fetchpriority="high" decoding="async">
+        <div class="hero__shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">NIGHT ON · 빛 흡수 천장 전등</p>
+        <h1 class="hero__title" id="hero-title">전등을 켰더니,<br>밤이 되었다.</h1>
+        <p class="hero__desc">밝은 낮에도 원하는 공간에 나만의 밤을 만드는 천장형 빛 흡수 전등.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#product">나의 밤 만나보기</a>
+        </div>
+        <p class="hero__note">가상 제품 콘셉트 · AI 생성 이미지</p>
+      </div>
+    </section>
+
+    <!-- C. 제품 소개 -->
+    <section class="product section section--light" id="product" aria-labelledby="product-title">
+      <div class="product__inner">
+        <figure class="product__figure reveal" data-image="images/product.png">
+          <img
+            src="images/product.png"
+            width="1122" height="1402"
+            alt="무광 네이비 돔과 검정 밑면, 얇은 케이블과 원형 천장 고정부로 이루어진 NIGHT ON 전등. 돔 가장자리에 라벤더 링이 보인다."
+            loading="lazy" decoding="async">
+          <figcaption class="product__caption">무광 네이비 돔 · 검정 밑면 · 라벤더 표시 링</figcaption>
+        </figure>
+
+        <div class="product__copy reveal">
+          <p class="eyebrow">제품 소개</p>
+          <h2 class="section__title" id="product-title">불을 켜듯,<br>밤을 켜세요.</h2>
+          <p class="section__lead">창가의 채광은 남기고, 필요한 공간에 어둠을 만드는 새로운 전등을 상상했습니다.</p>
+
+          <dl class="features">
+            <div class="features__item">
+              <dt>공간의 빛 흡수</dt>
+              <dd>리모컨이나 벽면 스위치를 켜면 주변의 빛을 흡수해 원하는 공간에 어둠을 만듭니다. 방을 비추는 조명 기능은 없습니다.</dd>
+            </div>
+            <div class="features__item">
+              <dt>강도·범위 조절</dt>
+              <dd>어둠의 강도와 적용 범위를 공간과 상황에 맞게 고릅니다. 침대 주변만, 또는 방 전체로.</dd>
+            </div>
+            <div class="features__item">
+              <dt>예약 종료</dt>
+              <dd>원할 때만 쓰는 선택 기능입니다. 정한 시간이 지나면 공간을 원래 밝기로 되돌려, 커튼을 다시 열 필요가 없습니다.</dd>
+            </div>
+            <div class="features__item">
+              <dt>시네마 모드</dt>
+              <dd>외부 빛은 흡수하면서 TV·프로젝터 화면의 빛은 그대로 유지합니다.</dd>
+            </div>
+          </dl>
+
+          <p class="fine-print">위 기능은 가상 제품의 설정이며, 실제 기술·사양·효능을 검증한 내용이 아닙니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. 낮과 밤 비교 (레이아웃과 레이블. 드래그 동작은 3단계) -->
+    <section class="compare section section--dark" id="compare" aria-labelledby="compare-title">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="eyebrow">낮과 밤</p>
+          <h2 class="section__title" id="compare-title">같은 공간,<br>내가 선택하는 밤.</h2>
+          <p class="section__lead">커튼은 그대로, 창가의 채광도 그대로. 전등을 켜면 침대 주변만 조용히 밤이 됩니다.</p>
+        </header>
+
+        <figure class="compare__figure reveal">
+          <div class="compare__frame" data-image="images/hero_day.png" data-compare>
+            <img
+              class="compare__img compare__img--day"
+              src="images/hero_day.png"
+              width="1672" height="941"
+              alt="같은 침실의 밝은 낮. 큰 창으로 햇빛이 들어오고 천장의 NIGHT ON 전등은 꺼져 있다."
+              loading="lazy" decoding="async">
+            <img
+              class="compare__img compare__img--night"
+              src="images/hero_night.png"
+              width="1672" height="941"
+              alt="NIGHT ON이 작동해 창가는 밝은 채로 침대 주변만 어두워진 침실."
+              loading="lazy" decoding="async">
+            <!-- 보이지 않는 range 입력이 마우스·터치·키보드 조작을 모두 받는다. -->
+            <input
+              class="compare__range"
+              type="range" min="0" max="100" step="1" value="42"
+              aria-label="낮과 밤 비교 기준선. 왼쪽으로 옮기면 NIGHT ON 영역이 넓어집니다."
+              aria-valuetext="NIGHT OFF 42%, NIGHT ON 58%">
+            <div class="compare__divider" aria-hidden="true"></div>
+            <span class="compare__handle" aria-hidden="true"></span>
+            <span class="compare__label compare__label--off" aria-hidden="true">NIGHT OFF</span>
+            <span class="compare__label compare__label--on" aria-hidden="true">NIGHT ON</span>
+          </div>
+          <figcaption class="compare__caption">
+            <span class="compare__hint">손잡이를 좌우로 끌어 보세요. 키보드에서는 손잡이를 선택한 뒤 ← → 방향키로 움직입니다.</span>
+            왼쪽은 NIGHT OFF, 오른쪽은 NIGHT ON 상태입니다. AI 생성 이미지로 표현한 가상 기능 시각화이며, 실제 기기 연결이 아닙니다.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- E. 낮의 휴식 -->
+    <section class="scene section section--light" id="scenes" aria-labelledby="sleep-title">
+      <div class="scene__inner">
+        <figure class="scene__figure scene__figure--sleep reveal" data-image="images/day_sleep.png">
+          <img
+            src="images/day_sleep.png"
+            width="1672" height="941"
+            alt="창밖은 환한 낮이지만 NIGHT ON이 켜진 침대 주변은 어두워, 한 사람이 편안히 낮잠을 자고 있다."
+            loading="lazy" decoding="async">
+        </figure>
+        <div class="scene__copy reveal">
+          <p class="eyebrow">낮의 휴식</p>
+          <h2 class="section__title" id="sleep-title">세상은 아침.<br>나는 퇴근.</h2>
+          <p class="section__lead">창밖의 시간과 내 휴식 시간이 달라도, 원하는 공간에 밤을 켜는 상상.</p>
+          <p class="scene__text">야간 근무를 마치고 돌아온 아침. 커튼을 여닫지 않아도 침대 주변만 조용히 어두워집니다. 창가의 채광은 그대로 둔 채로.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. 홈시네마 -->
+    <section class="scene scene--reverse section section--dark" id="cinema" aria-labelledby="cinema-title">
+      <div class="scene__inner">
+        <figure class="scene__figure scene__figure--cinema reveal" data-image="images/cinema.png">
+          <img
+            src="images/cinema.png"
+            width="1672" height="941"
+            alt="밝은 오후의 거실. NIGHT ON의 시네마 모드로 소파 주변은 어두워지고, 큰 화면 속 바다 풍경만 선명하게 빛난다."
+            loading="lazy" decoding="async">
+        </figure>
+        <div class="scene__copy reveal">
+          <p class="eyebrow">홈시네마</p>
+          <h2 class="section__title" id="cinema-title">오후 2시,<br>심야 상영.</h2>
+          <p class="section__lead">시네마 모드로 외부 빛은 줄이고, 화면의 빛은 유지합니다.</p>
+          <p class="scene__text">밝은 오후에도 거실이 상영관이 됩니다. 창문을 가리지 않고, 화면 주변만 어두워지는 설정입니다.</p>
+          <p class="fine-print">시네마 모드는 가상 제품의 기능 설정입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- G. 사용 방법 -->
+    <section class="howto section section--light" id="howto" aria-labelledby="howto-title">
+      <div class="section__inner">
+        <header class="section__head section__head--row reveal">
+          <div>
+            <p class="eyebrow">사용 방법</p>
+            <h2 class="section__title" id="howto-title">밤을 켜고,<br>내 생활에 맞게 조절하세요.</h2>
+          </div>
+          <p class="section__lead">리모컨 또는 벽면 스위치로 시작하고, 어둠의 범위와 모드를 고릅니다. 끝나는 시간은 원할 때만 예약합니다.</p>
+        </header>
+
+        <ol class="steps reveal">
+          <li class="steps__item">
+            <span class="steps__num">01</span>
+            <h3 class="steps__title">밤 켜기</h3>
+            <p class="steps__text">리모컨 또는 벽면 스위치로 빛 흡수를 시작합니다.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">02</span>
+            <h3 class="steps__title">범위·어둠 조절</h3>
+            <p class="steps__text">어둠의 강도와 적용 범위를 공간에 맞게 고릅니다.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">03</span>
+            <h3 class="steps__title">모드 선택</h3>
+            <p class="steps__text">기본 모드, 또는 화면 빛을 남기는 시네마 모드.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">04</span>
+            <h3 class="steps__title">예약 종료 <small class="steps__tag">선택</small></h3>
+            <p class="steps__text">원할 때만 끝나는 시간을 정해 두세요. 시간이 지나면 공간이 원래 밝기로 돌아오고, 예약하지 않으면 직접 끌 때까지 밤이 유지됩니다.</p>
+          </li>
+        </ol>
+
+        <p class="fine-print">가상 제품의 조작 방식 설정입니다. 실제 배선이나 시공 안내가 아닙니다.</p>
+      </div>
+    </section>
+
+    <!-- H. FAQ -->
+    <section class="faq section section--dark" id="faq" aria-labelledby="faq-title">
+      <div class="faq__inner">
+        <header class="section__head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section__title" id="faq-title">자주 묻는 질문</h2>
+        </header>
+
+        <div class="faq__list reveal">
+          <details class="faq__item">
+            <summary class="faq__q">실제 판매하는 제품인가요?</summary>
+            <p class="faq__a">개인 마케팅 프로젝트로 기획한 가상 제품입니다. 실제 판매·결제 기능은 제공하지 않습니다.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">커튼을 닫아야 하나요?</summary>
+            <p class="faq__a">커튼이 열린 상태에서도 필요한 공간의 빛을 흡수하는 설정입니다.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">일반 전등처럼 방을 밝힐 수도 있나요?</summary>
+            <p class="faq__a">본 기획은 빛 흡수 전용 제품입니다. 라벤더 링은 작동 상태를 알리는 표시등입니다.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">화면도 어두워지나요?</summary>
+            <p class="faq__a">시네마 모드는 TV·프로젝터 화면의 빛을 유지한다는 가상 설정입니다.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">어떻게 조작하나요?</summary>
+            <p class="faq__a">리모컨 또는 벽면 스위치로 작동하고, 어둠 강도·범위와 예약 종료를 선택하는 방식으로 기획했습니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- I. 마무리와 푸터 -->
+  <footer class="site-footer">
+    <section class="closing reveal" aria-labelledby="closing-title">
+      <h2 class="closing__title" id="closing-title">당신의 밤을 켜세요.</h2>
+      <a class="btn btn--outline" href="#product">제품 콘셉트 살펴보기</a>
+      <p class="closing__note">NIGHT ON은 교육용 가상 제품 콘셉트입니다. 제품 및 사용 장면 이미지는 AI로 제작했습니다.</p>
+    </section>
+
+    <div class="site-footer__bar">
+      <a class="wordmark wordmark--small" href="#top" aria-label="NIGHT ON 처음으로">NIGHT ON</a>
+      <ul class="site-footer__links" aria-label="바로가기">
+        <li><a href="#product">제품 소개</a></li>
+        <li><a href="#compare">낮과 밤</a></li>
+        <li><a href="#scenes">사용 장면</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <p class="site-footer__meta">© 2026 NIGHT ON · 개인 마케팅 프로젝트 · 실제 판매 제품이 아닙니다.</p>
+    </div>
+  </footer>
+
+  <!-- 배경음악: 오른쪽 아래 작은 토글 버튼. 재생 상태는 audio 요소의 실제 이벤트로 갱신한다. -->
+  <div class="bgm" data-bgm>
+    <audio class="bgm__audio" preload="metadata" loop>
+      <source src="audio/night-on-bgm.flac" type="audio/flac">
+    </audio>
+    <button class="bgm__btn" type="button" aria-pressed="false" aria-label="배경음악 켜기">
+      <span class="bgm__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="bgm__label">음악 켜기</span>
+    </button>
+    <span class="bgm__status visually-hidden" role="status" aria-live="polite"></span>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
