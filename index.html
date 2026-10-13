@@ -28,6 +28,7 @@
           <li><a class="site-nav__link" href="#compare">낮과 밤</a></li>
           <li><a class="site-nav__link" href="#scenes">사용 장면</a></li>
           <li><a class="site-nav__link" href="#faq">FAQ</a></li>
+          <li><a class="site-nav__link" href="#pricing">가격</a></li>
         </ul>
       </nav>
     </div>
@@ -248,7 +249,108 @@
         </div>
       </div>
     </section>
+    <!-- J. 가격과 구매 체험 -->
+    <section class="pricing section section--light" id="pricing" aria-labelledby="pricing-title">
+      <div class="pricing__inner">
+        <figure class="pricing__figure reveal" data-image="images/product.png">
+          <img
+            src="images/product.png"
+            width="1122" height="1402"
+            alt="NIGHT ON 전등 제품 사진. 무광 네이비 돔과 라벤더 표시 링."
+            loading="lazy" decoding="async">
+        </figure>
+
+        <div class="pricing__copy reveal">
+          <p class="eyebrow">구매</p>
+          <h2 class="section__title pricing__title" id="pricing-title">NIGHT ON</h2>
+          <p class="section__lead">원하는 공간에 밤을 만드는 천장형 빛 흡수 전등</p>
+
+          <p class="price">
+            <span class="price__value">399,000원</span>
+            <span class="price__tag">기획 가격</span>
+          </p>
+
+          <dl class="pricing__specs">
+            <div class="pricing__spec">
+              <dt>색상</dt>
+              <dd><span class="swatch" aria-hidden="true"></span>미드나이트 네이비</dd>
+            </div>
+            <div class="pricing__spec">
+              <dt>구성품</dt>
+              <dd>본체, 리모컨, 설치 가이드</dd>
+            </div>
+          </dl>
+
+          <div class="pricing__actions">
+            <button class="btn btn--primary" type="button" data-open-purchase>구매하기</button>
+          </div>
+          <p class="fine-print">가상 제품 구매 체험입니다. 실제 주문 및 결제는 진행되지 않습니다.</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- 구매 체험 모달: 네이티브 dialog로 포커스 가둠·배경 차단·Escape 처리 -->
+  <dialog class="modal" id="purchase-modal" aria-labelledby="modal-title">
+    <div class="modal__box">
+      <button class="modal__close" type="button" aria-label="닫기" data-modal-close>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <!-- 1단계: 주문 내용 -->
+      <div class="modal__step" data-step="order">
+        <div class="modal__product">
+          <img class="modal__img" src="images/product.png" width="1122" height="1402" alt="" decoding="async">
+          <div>
+            <p class="eyebrow">구매 체험</p>
+            <h2 class="modal__title" id="modal-title">NIGHT ON</h2>
+            <p class="modal__desc">원하는 공간에 밤을 만드는 천장형 빛 흡수 전등</p>
+          </div>
+        </div>
+
+        <dl class="modal__rows">
+          <div class="modal__row"><dt>색상</dt><dd>미드나이트 네이비</dd></div>
+          <div class="modal__row"><dt>단가</dt><dd>399,000원</dd></div>
+          <div class="modal__row modal__row--qty">
+            <dt id="qty-label">수량</dt>
+            <dd>
+              <div class="qty" role="group" aria-labelledby="qty-label">
+                <button class="qty__btn" type="button" data-qty="-1" aria-label="수량 줄이기">
+                  <span aria-hidden="true">−</span>
+                </button>
+                <span class="qty__value" id="qty-value">1</span>
+                <button class="qty__btn" type="button" data-qty="1" aria-label="수량 늘리기">
+                  <span aria-hidden="true">+</span>
+                </button>
+              </div>
+              <span class="qty__hint">1~5개</span>
+            </dd>
+          </div>
+        </dl>
+
+        <p class="modal__total" aria-live="polite" aria-atomic="true">
+          <span>상품 합계</span>
+          <strong id="modal-total">399,000원</strong>
+        </p>
+
+        <button class="btn btn--primary modal__submit" type="button" data-modal-complete>구매 체험 완료</button>
+        <p class="fine-print modal__note">가상 제품 구매 체험입니다. 실제 주문 및 결제는 진행되지 않습니다.</p>
+      </div>
+
+      <!-- 2단계: 완료 -->
+      <div class="modal__step" data-step="done" hidden>
+        <p class="eyebrow">구매 체험</p>
+        <h2 class="modal__title" id="modal-done-title" tabindex="-1">구매 체험이 완료되었습니다.</h2>
+        <dl class="modal__rows">
+          <div class="modal__row"><dt>제품</dt><dd>NIGHT ON · 미드나이트 네이비</dd></div>
+          <div class="modal__row"><dt>수량</dt><dd id="done-qty">1개</dd></div>
+          <div class="modal__row"><dt>상품 합계</dt><dd id="done-total">399,000원</dd></div>
+        </dl>
+        <p class="modal__done-note">실제 주문이나 결제는 발생하지 않았습니다.</p>
+        <button class="btn btn--outline modal__submit" type="button" data-modal-close>닫기</button>
+      </div>
+    </div>
+  </dialog>
 
   <!-- I. 마무리와 푸터 -->
   <footer class="site-footer">
@@ -265,6 +367,7 @@
         <li><a href="#compare">낮과 밤</a></li>
         <li><a href="#scenes">사용 장면</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="#pricing">가격</a></li>
       </ul>
       <p class="site-footer__meta">© 2026 NIGHT ON · 개인 마케팅 프로젝트 · 실제 판매 제품이 아닙니다.</p>
     </div>
